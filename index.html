@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Álbum de Amor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="album">
+        <h1>Nosso Álbum de Amor</h1>
+        <p class="subtitle">Momentos especiais com meu amor</p>
+        <div class="pagina">
+            <div class="foto-container">
+                <img src="assets/Eu & Gabb.jpg" alt="Foto 1" class="foto" onclick="openModal('assets/Eu & Gabb.jpg', 'Nosso primeiro encontro', 'Eu senti um calor imenso, um calor gostoso vindo de você, como se a cada segundo a intensidade aumentasse, foi simplesmente um dos dias mais incríveis, é o momento intimo que tivemos, que eu jamais vou esquecer...<br><br>E eu nunca imaginaria que uma foto tão aleatoria, acabaria se tornando nossa foto favorita. Obrigado por esse dia!')">
+                <div class="caption" onclick="openModal('assets/Eu & Gabb.jpg', 'Nosso primeiro encontro', 'Eu senti um calor imenso, um calor gostoso vindo de você, como se a cada segundo a intensidade aumentasse, foi simplesmente um dos dias mais incríveis, é o momento intimo que tivemos, que eu jamais vou esquecer...<br><br>E eu nunca imaginaria que uma foto tão aleatoria, acabaria se tornando nossa foto favorita. Obrigado por esse dia!')">Nossa foto favorita</div>
+            </div>
+            <div class="foto-container">
+                <img src="assets/Metallica.jpg" alt="Foto 2" class="foto" onclick="openModal('assets/Metallica.jpg', 'METALLICA!', 'Eu fui completamente surpreendido. Eu realmente tinha cogitado diversas coisas (até um observatório kk), mas mesmo assim você conseguiu me supreender, me senti extremamente especial por ter dedicado seu tempo a querer fazer isso por mim, você me fez muito feliz esse dia. E eu ainda quero ter muitos momentos com você em ambientes assim...<br><br> MELHOR ORQUESTRA DO METALLICA DE TODAS!')">
+                <div class="caption" onclick="openModal('assets/Metallica.jpg', 'METALLICA!', 'Eu fui completamente surpreendido. Eu realmente tinha cogitado diversas coisas (até um observatório kk), mas mesmo assim você conseguiu me supreender, me senti extremamente especial por ter dedicado seu tempo a querer fazer isso por mim, você me fez muito feliz esse dia. E eu ainda quero ter muitos momentos com você em ambientes assim...<br><br> MELHOR ORQUESTRA DO METALLICA DE TODAS!')">METALLICA!</div>
+            </div>
+            <div class="foto-container">
+                <img src="assets/PrimeiroEncontro.jpg" alt="Foto 3" class="foto" onclick="openModal('assets/PrimeiroEncontro.jpg', 'O dia mais incrível!', 'Neste dia eu conheci o real conceito de felicidade...<br><br> Você me mostrou que amar alguém pode ser lindo, neste dia eu tive palpitações a cada segundo que você chegava perto, pois o que eu mais queria na minha vida estava do meu lado, perfeita e incrível como sempre. Hoje eu lembro deste dia com enorme carinho, pois foi o momento mais incrível da minha vida, o dia do nosso primeiro beijo, e nosso primeiro encontro.<br><br> Naquele momento em baixo da arvore assistindo um filme, eu simplesmente esqueci do filme, e comecei a prestar atenção em cada detalhe em você, nas suas roupas, no seu rosto, no seu cabelo, na sua boca, no seu corpo, e tudo que formava aquele linda obra de arte, sinceramente, eu nunca vou encontrar um amor tão incrível e perfeito como o que você me proporciona.<br><br>Obrigado por estar na minha vida amor!')">
+                <div class="caption" onclick="openModal('assets/PrimeiroEncontro.jpg', 'O dia mais incrível!', 'Neste dia eu conheci o real conceito de felicidade...<br><br> Você me mostrou que amar alguém pode ser lindo, neste dia eu tive palpitações a cada segundo que você chegava perto, pois o que eu mais queria na minha vida estava do meu lado, perfeita e incrível como sempre. Hoje eu lembro deste dia com enorme carinho, pois foi o momento mais incrível da minha vida, o dia do nosso primeiro beijo, e nosso primeiro encontro.<br><br> Naquele momento em baixo da arvore assistindo um filme, eu simplesmente esqueci do filme, e comecei a prestar atenção em cada detalhe em você, nas suas roupas, no seu rosto, no seu cabelo, na sua boca, no seu corpo, e tudo que formava aquele linda obra de arte, sinceramente, eu nunca vou encontrar um amor tão incrível e perfeito como o que você me proporciona.<br><br>Obrigado por estar na minha vida amor!')">O dia mais incrível</div>
+            </div>
+            <!-- Adicione mais fotos conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="captionText" class="caption-modal"></div>
+
+        <!-- Seção de texto adicional com estilo de caixa de texto -->
+        <div class="text-section">
+            <h3>Neste dia...</h3>
+            <div id="fixedText" class="text-box"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
